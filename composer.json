@@ -1,0 +1,39 @@
+{
+    "name": "anthonymacs/laravel-components",
+    "description": "A collection of reusable Laravel Blade components",
+    "type": "library",
+    "keywords": ["laravel", "blade", "components", "ui"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "antonio macasa jr.",
+            "email": "antoniomacasajr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "anthonymacs\\LaravelComponents\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "anthonymacs\\LaravelComponents\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "anthonymacs\\LaravelComponents\\ComponentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
