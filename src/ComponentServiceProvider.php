@@ -13,7 +13,7 @@ class ComponentServiceProvider extends ServiceProvider
 
         // Publish views so users can override them
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/components'),
+            __DIR__ . '/../resources/views/components' => resource_path('views/components'),
         ], 'components-views');
     }
 
